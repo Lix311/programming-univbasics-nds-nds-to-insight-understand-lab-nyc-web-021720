@@ -11,7 +11,7 @@ def print_first_directors_movie_titles
   
   row = 0 
   while row < directors_database.length do 
-    puts "Row #{row} has #{directors_database[row]} columns}"
+    puts "Row #{row} has #{directors_database[:movies]} movies}"
   row += 1 
   end      
 end 
