@@ -13,7 +13,7 @@ def print_first_directors_movie_titles
   while row < directors_database.length do 
     #puts "Director #{row} made these movies #{directors_database[row][:movies]}}"
     col = 0 
-    while col < directors_database[row][:movies]
+    while col < directors_database[row][:movies].length 
       indiv_movies = directors_database[row][:movies][col]
       puts "Movie #{col} is #{indiv_movies}"
       col += 1 
