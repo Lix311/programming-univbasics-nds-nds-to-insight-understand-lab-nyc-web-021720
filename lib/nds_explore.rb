@@ -10,9 +10,12 @@ def print_first_directors_movie_titles
   #pretty_print_nds(directors_database)
   row = 0 
   while row < directors_database.length 
-    if row == 0 
-      puts directors_database[row][:movies]
+    if col = 0 
+      while col < directors_database[row].length 
+          puts directors_database[row][:movies]
+          col += 1 
+      end 
+    row += 1 
     end 
-  row += 1 
   end 
 end 
