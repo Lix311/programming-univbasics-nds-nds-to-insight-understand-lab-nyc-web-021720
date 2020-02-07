@@ -17,6 +17,8 @@ def print_first_directors_movie_titles
       first_d_movies = directors_database[row][:movies][col][:title]
       
         puts first_d_movies
+        puts row 
+        puts col 
        
       
       col += 1 
