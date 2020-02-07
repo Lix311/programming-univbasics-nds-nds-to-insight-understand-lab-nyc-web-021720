@@ -7,7 +7,7 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  puts directors_database
+  pretty_print_nds(directors_database)
   
   row = 0 
   while row < directors_database.length do 
@@ -17,7 +17,7 @@ def print_first_directors_movie_titles
       first_d_movies = directors_database[row][:movies][col][:title]
         if row == 0 
         puts first_d_movies
-        end 
+      end 
        
       
       col += 1 
