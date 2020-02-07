@@ -7,5 +7,15 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  pretty_print_nds(directors_database)
+  #pretty_print_nds(directors_database)
+  
+  row = 0 
+  while row < directors_database.length do 
+    puts "Row #{row} has #{directors_database[row]} columns}"
+    col = 0
+      while col < directors_database[row].length do 
+        inner_len = directors_database[row][col].length  
+          
+      end 
+  end      
 end 
