@@ -7,16 +7,7 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  #pretty_print_nds(directors_database)
-  row = 0 
-    while row < directors_database[0][row].length 
-      if row == 0
-      puts "Movie #{row} is #{directors_database[0][row][:movies][:title]}"
-      end 
-    row += 1 
-    end 
-      
-        
+  pretty_print_nds(directors_database)
   
   
 end 
