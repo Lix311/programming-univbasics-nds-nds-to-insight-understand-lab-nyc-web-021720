@@ -15,7 +15,13 @@ def print_first_directors_movie_titles
     col = 0
       while col < directors_database[row].length do 
         inner_len = directors_database[row][col].length  
-          
+        inner_index = 0 
+          while inner_index < inner_len do 
+            puts "@"
+          inner_index += 1 
+          end 
+      col += 1 
       end 
+  row += 1 
   end      
 end 
