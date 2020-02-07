@@ -12,7 +12,7 @@ def print_first_directors_movie_titles
   while row < directors_database.length 
     if col = 0 
       while col < directors_database[row].length 
-          puts directors_database[row][:movies][col]
+          puts directors_database[row][:movies][col][:title]
           col += 1 
       end 
     row += 1 
