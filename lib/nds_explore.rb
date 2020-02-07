@@ -14,8 +14,11 @@ def print_first_directors_movie_titles
     #puts "Director #{row} made these movies #{directors_database[row][:movies]}}"
     col = 0 
     while col < directors_database[row][:movies].length 
-      indiv_movies = directors_database[row][:movies][col][:title]
-      puts "Movie #{col} is #{indiv_movies}"
+      first_d_movies = directors_database[row][:movies][col][:title]
+      if col == 0 
+        puts directors_database[0][:movies][col][:title]
+      end  
+      
       col += 1 
     end 
     
