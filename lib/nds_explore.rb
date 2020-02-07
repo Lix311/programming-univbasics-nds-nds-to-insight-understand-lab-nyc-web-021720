@@ -14,8 +14,8 @@ def print_first_directors_movie_titles
       col = 0 
       while col < directors_database[row][:movies].length 
       if directors_database[row][:name] == "Stephen Spielberg"
-        puts directors_database[row][:movies][col][:title]
-      end 
+        puts directors_database[row][:movies][col][:title] # this col is targeting which of 6 hash inside movies array 
+      end # title targeting each movies name 
     col += 1 
     end 
     row += 1 
