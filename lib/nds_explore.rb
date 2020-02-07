@@ -10,8 +10,10 @@ def print_first_directors_movie_titles
   #pretty_print_nds(directors_database)
   row = 0 
   while row < directors_database.length 
-    puts directors_database.length 
     puts directors_database[row]
+      if directors_database[row][:name] == "Stephen Spielberg"
+        puts directors_database[row][:movies]
+      end 
     row += 1 
     end 
 end 
