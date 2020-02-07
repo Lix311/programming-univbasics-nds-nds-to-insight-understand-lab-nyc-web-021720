@@ -13,5 +13,4 @@ def print_first_directors_movie_titles
     puts directors_database[row]
     row += 1 
     end 
-  end 
 end 
