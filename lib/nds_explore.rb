@@ -12,7 +12,7 @@ def print_first_directors_movie_titles
   while row < directors_database.length 
     #puts directors_database[row]
       col = 0 
-      while col < directors_database[row][].length 
+      while col < directors_database[row][:movies].length 
       if directors_database[row][:name] == "Stephen Spielberg"
         puts directors_database[row][:movies][col]
       end 
